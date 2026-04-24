@@ -30,6 +30,29 @@ int main() {
                 printf("Media: %.2f\n", media);
                 break;
 
+            case 3:
+                if(media >= 6)
+                    printf("Aprovado\n");
+                else if(media >= 4)
+                    printf("Recuperacao\n");
+                else
+                    printf("Reprovado\n");
+                break;
+
+            case 4:
+                printf("\nRESULTADO:\n");
+                printf("Nota 1: %.2f\n", n1);
+                printf("Nota 2: %.2f\n", n2);
+                printf("Media: %.2f\n", media);
+
+                if(media >= 6)
+                    printf("Aprovado\n");
+                else if(media >= 4)
+                    printf("Recuperacao\n");
+                else
+                    printf("Reprovado\n");
+                break;
+
             case 5:
                 printf("Saindo...\n");
                 break;
