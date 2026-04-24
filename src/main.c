@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#FUNÇÕES
+// FUNÇÕES
 int derivada(int A, int b){
     int a = a*2;
     printf("Derivada: %dx + %d\n", 2*a, b);
@@ -67,7 +67,7 @@ int main() {
             case 6:
                 int a, b, c;
 
-            printf("Digite o coeficiente 'a'"); #A função foi declarada acima para que ela possa ser acessa por todo o código
+            printf("Digite o coeficiente 'a'"); //A função foi declarada acima para que ela possa ser acessa por todo o código
             scanf("%i", &a);
 
                 printf("Digite o coeficiente 'b'");
