@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #FUNÇÕES
-int derivada(int a, int b){
+int derivada(int A, int b){
     int a = a*2;
     printf("Derivada: %dx + %d\n", 2*a, b);
     return 0;
