@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 // FUNÇÕES
-int derivada(int A, int b){
-    int a = a*2;
-    printf("Derivada: %dx + %d\n", 2*a, b);
+int derivada(int a, int b){
+    // O ERRO ESTAVA AQUI: Não declare "int a" novamente.
+    // Apenas use a variável que já veio pelo parâmetro.
+    int resultado_a = a * 2; 
+    printf("Derivada: %dx + %d\n", resultado_a, b);
     return 0;
 } 
 
@@ -20,11 +22,11 @@ int main() {
         printf("3 - Verificar situacao\n");
         printf("4 - Exibir resultado\n");
         printf("5 - Sair\n");
+        printf("6 - Calcular Derivada\n"); // Adicionado ao menu para facilitar
         printf("Opcao: ");
         scanf("%d", &opcao);
 
         switch(opcao) {
-
             case 1:
                 printf("Nota 1: ");
                 scanf("%f", &n1);
@@ -64,21 +66,22 @@ int main() {
                 printf("Saindo...\n");
                 break;
 
-            case 6:
-                int a, b, c;
+            case 6: { // Adicionado chaves para permitir declaração de variáveis no case
+                int va, vb, vc;
 
-            printf("Digite o coeficiente 'a'"); //A função foi declarada acima para que ela possa ser acessa por todo o código
-            scanf("%i", &a);
+                printf("Digite o coeficiente 'a': ");
+                scanf("%i", &va);
 
-                printf("Digite o coeficiente 'b'");
-                scanf("%i", &b);
+                printf("Digite o coeficiente 'b': ");
+                scanf("%i", &vb);
 
-                printf("Digite o coeficiente 'c'");
-                scanf("%i", &c);
+                printf("Digite o coeficiente 'c': ");
+                scanf("%i", &vc);
 
-                printf("Função original: %dx² + %dx + %d\n", a, b, c)
-                derivada(a,b);
+                printf("Função original: %dx^2 + %dx + %d\n", va, vb, vc);
+                derivada(va, vb);
                 break;
+            }
             default:
                 printf("Opcao invalida!\n");
         }
