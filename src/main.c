@@ -1,10 +1,11 @@
 #include <stdio.h>
 
+#FUNÇÕES
 int derivada(int a, int b){
-    int a_calc = a*2;
+    int a = a*2;
     printf("Derivada: %dx + %d\n", 2*a, b);
     return 0;
-}
+} 
 
 int main() {
     float n1 = 0, n2 = 0, media = 0;
@@ -66,8 +67,8 @@ int main() {
             case 6:
                 int a, b, c;
 
-                printf("Digite o coeficiente 'a'");
-                scanf("%i", &a);
+            printf("Digite o coeficiente 'a'"); #A função foi declarada acima para que ela possa ser acessa por todo o código
+            scanf("%i", &a);
 
                 printf("Digite o coeficiente 'b'");
                 scanf("%i", &b);
@@ -75,8 +76,9 @@ int main() {
                 printf("Digite o coeficiente 'c'");
                 scanf("%i", &c);
 
-                printf("Função original: %dx² + %dx + %d\n", a, b, c);
+                printf("Função original: %dx² + %dx + %d\n", a, b, c)
                 derivada(a,b);
+                break;
             default:
                 printf("Opcao invalida!\n");
         }
