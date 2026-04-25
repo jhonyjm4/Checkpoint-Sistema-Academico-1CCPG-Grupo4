@@ -8,7 +8,7 @@ int main() {
     scanf("%f", &nota1);
 
     printf("Digite a segunda nota: \n"); //Adição de um '\n' para melhor visualização no terminal
-    scanf("%f", nota2);
+    scanf("%f", &nota2); //Adição de um '&' antes do nota2
 
     media = (nota1 + nota2) / 2; //Adição de paranteses entre 'nota1 + nota2'
 
