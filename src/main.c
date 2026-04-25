@@ -29,8 +29,8 @@ int main() {
         printf("2 - Calcular media\n");
         printf("3 - Verificar situacao\n");
         printf("4 - Exibir resultado\n");
-        printf("5 - Sair\n");
-        printf("6 - Calcular Derivada\n");
+        printf("5 - Calcular Derivada\n");
+        printf("6 - Sair\n");
         printf("Opcao: ");
         
         // Lê a escolha do usuário
