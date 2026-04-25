@@ -79,12 +79,7 @@ int main() {
                 break;
 
             case 5:
-                // Finaliza o loop while na próxima verificação
-                printf("Saindo...\n");
-                break;
-
-            case 6: { 
-                
+            //Campo para input dos coenficiente da calculadora de derivada
                 int va, vb, vc;
 
                 printf("Digite o coeficiente 'a': ");
@@ -101,6 +96,12 @@ int main() {
                
                 derivada(va, vb);
                 break;
+
+            case 6: { 
+                 // Finaliza o loop while 
+                printf("Saindo...\n");
+                break;
+                
             }
 
             default:
