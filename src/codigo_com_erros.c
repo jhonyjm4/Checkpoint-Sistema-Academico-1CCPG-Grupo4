@@ -1,4 +1,4 @@
-#include <stdio.h> //Alteração das aspas ("") para <> no stdio.h
+#include <stdio.h> //Alteração das aspas ("") para maior e menor '<>' no stdio.h
 
 int main() {
     float nota1, nota2, media; //Adição de um ponto e virgula (;) ao final da linha
@@ -12,10 +12,10 @@ int main() {
 
     media = (nota1 + nota2) / 2; //Adição de paranteses entre 'nota1 + nota2'
 
-    if (media = 6) {
-        printf("Aluno aprovado\n");
+    if (media >= 6) { //Adição de um maior (>) junto ao '='
+        printf("Status: Aluno aprovado\n");
     } else {
-        printf("Aluno reprovado\n");
+        printf("Status: Aluno reprovado\n");
     }
 
     return 0;
