@@ -51,7 +51,7 @@ int main() {
                 // Processamento: calcula a média aritmética
                 media = (n1 + n2) / 2; // Calcula a média das notas
                 printf("Media: %.2f\n", media); // Apresenta a média como saída por meio de uma "print"
-                break; // Encerra o processo da "case 2"
+                break; 
 
             case 3:
                 // Lógica condicional simples para aprovação
